@@ -3,9 +3,37 @@
     padding: 0;
 }
 
-.container div {
-    width: 50%;
-    height: 200px;
+header {
+    width: 960px;
+    height: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: aqua;
+}
+
+.navbar {
+    width: 400px;
+    height: 50px;
+    float: right;
+    margin-top: 20px;
+}
+
+.navbar div ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.navbar div ul li {
+    display: inline;
+}
+.navbar div ul li a {
+    display: inline-block;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 
