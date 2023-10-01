@@ -8,33 +8,59 @@
 </head>
 <body>
     <header>
+      <div id="logo">
+          <a href="../index.html" class="navbar-brand">NAVBAR</a>
+      </div>
         <nav class="navbar">
-            <div>
-                <a href="../index.html" class="navbar-brand">NAVBAR</a>
-            </div>
             <div id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Página 1</a>
+                    <a class="nav-link" href="pages/productos.html">Productos</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#">Página 2</a>
+                    <a class="nav-link" href="pages/sobre_nosotros.html">Sobre Nosotros</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Página 3</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Página 4</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Página 5</a>
+                    <a class="nav-link" href="#">contacto</a>
                   </li>
                 </ul>
               </div>
         </nav>
     </header>
     <main>
-
+      <section class="formulario_solicitud">
+        <div>
+            <h1>CONSULTAS</h1>
+        </div>
+        <div class="formulario_consultas">
+            <div id="input">
+                <form>
+                    <div id="name">
+                        <input type="text" id="first_name" placeholder="Nombre" required="required">
+                    </div>
+                    <div id="last_name">
+                        <input type="text" id="last_name" placeholder="Apellido" required="required">
+                    </div>
+                    <div id="corporation">
+                        <input type="text" id="corporation" placeholder="Empresa (opcional)">
+                    </div>
+                    <div id="email">
+                        <input type="email" id="email" placeholder="email" required="required">
+                    </div>
+                    <div class="lista_productos">
+                        <label>Motivo de consulta</label>
+                        <select id="productos">
+                            <option value="producto1" id="seleccion_producto1">Presupuesto personalizado</option>
+                            <option value="producto2" id="seleccion_producto2">Consultas</option>
+                        </select>
+                    </div>
+                    <div id="enviar">
+                      <button>Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
     </main>
 </body>
 </html>

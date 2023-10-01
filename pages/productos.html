@@ -8,26 +8,20 @@
 </head>
 <body>
     <header>
+      <div id="logo">
+          <a href="../index.html" class="navbar-brand">NAVBAR</a>
+      </div>
         <nav class="navbar">
-            <div>
-                <a href="../index.html" class="navbar-brand">NAVBAR</a>
-            </div>
             <div id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Página 1</a>
+                    <a class="nav-link" href="#">Productos</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#">Página 2</a>
+                    <a class="nav-link" href="pages/sobre_nosotros.html">Sobre Nosotros</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Página 3</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Página 4</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Página 5</a>
+                    <a class="nav-link" href="pages/contacto.html">contacto</a>
                   </li>
                 </ul>
               </div>
@@ -35,37 +29,55 @@
     </header>
     <main>
         <section class="productos">
-            <div class="container">
-                <div>
+            <div class="contenedor_productos">
+                <article class="card_productos" id="producto1">
+                    <h1>Producto 1</h1>
+                    <img id="imagen1" src="#">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam praesentium ducimus placeat aliquid deserunt veritatis magnam inventore nostrum tenetur soluta deleniti dolorum ipsa doloribus alias, eius eveniet! Neque, quae.</p>
+                </article>
+                <article class="card_productos" id="producto2">
+                    <h1>Producto 2</h1>
+                    <img id="imagen1" src="#">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam praesentium ducimus placeat aliquid deserunt veritatis magnam inventore nostrum tenetur soluta deleniti dolorum ipsa doloribus alias, eius eveniet! Neque, quae.</p>
+                </article>
+                <article class="card_productos" id="producto3">
+                    <h1>Producto 3</h1>
+                    <img id="imagen1" src="#">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam praesentium ducimus placeat aliquid deserunt veritatis magnam inventore nostrum tenetur soluta deleniti dolorum ipsa doloribus alias, eius eveniet! Neque, quae.</p>
+                </article>
+            </div>
+        </section>
+        <section class="formulario_solicitud">
+            <div>
+                <h1>PRESUPUESTO DE PRODUCTOS</h1>
+            </div>
+            <div class="formulario_solicitud_productos">
+                <div id="input">
+                    <form>
+                        <div id="name">
+                            <input type="text" id="first_name" placeholder="Nombre" required="required">
+                        </div>
+                        <div id="last_name">
+                            <input type="text" id="last_name" placeholder="Apellido" required="required">
+                        </div>
+                        <div id="corporation">
+                            <input type="text" id="corporation" placeholder="Empresa (opcional)">
+                        </div>
+                        <div id="email">
+                            <input type="email" id="email" placeholder="email" required="required">
+                        </div>
+                        <div class="lista_productos">
+                            <label>Seleccione el producto</label>
+                            <select id="productos">
+                                <option value="producto1" id="seleccion_producto1">Producto 1</option>
+                                <option value="producto2" id="seleccion_producto2">Producto 2</option>
+                                <option value="producto3" id="seleccion_producto3">Producto 3</option>
+                            </select>
+                        </div>
+                    </form>
                     <div>
-                        <div class="card" style="width: 18rem; border-color: blue;">
-                            <div class="card-body">
-                            <h5 class="card-title">Producto uno</h5>
-                            <h6 class="card-subtitle">Tienes un descuento</h6>
-                            <h5>80%</h5>
-                            <p>*presentar documentación</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="card" style="width: 18rem; border-color: blue;">
-                            <div class="card-body">
-                            <h5 class="card-title">Producto 2</h5>
-                            <h6 class="card-subtitle">Tienes un descuento</h6>
-                            <h5>80%</h5>
-                            <p>*presentar documentación</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div >
-                        <div class="card" style="width: 18rem; border-color: blue;">
-                            <div class="card-body">
-                            <h5 class="card-title">Producto 3</h5>
-                            <h6 class="card-subtitle">Tienes un descuento</h6>
-                            <h5>80%</h5>
-                            <p>*presentar documentación</p>
-                            </div>
-                        </div>
+                        <span>Valor de los productos seleccionados:</span>
+                        <span id="valor_total"></span>
                     </div>
                 </div>
             </div>
