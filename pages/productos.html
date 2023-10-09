@@ -15,7 +15,13 @@
             <div id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Productos</a>
+                    <div class="dropdown">
+                        <button class="button">Servicios</button>
+                        <div class="dropdown_options">
+                          <a class="drop-item" href="../pages/productos.html#servicios_empresas">Servicios Empresas</a>
+                          <a class="drop-item" href="../pages/productos.html#servicios_individuos">Servicios Individuos</a>
+                        </div>
+                      </div>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="sobre_nosotros.html">Sobre Nosotros</a>
@@ -28,22 +34,133 @@
         </nav>
     </header>
     <main>
-        <section class="productos">
-            <div class="contenedor_productos">
+        <section class="servicios_empresas">
+            <div class="contenedor_servicios_empresas">
                 <article class="card_productos" id="producto1">
                     <h1>Paquete Básico</h1>
                     <img id="imagen1" src="#">
-                    <p>Firewall; Antivirus; Bloqueo de sitios inseguros; Monitoreo Web</p>
+                    <ul>
+                        <li>
+                            Firewall de última generación
+                        </li>
+                        <li>
+                            Antivirus de dispositivo local, en red y web (El más efectivo del mercado) hasta 10 dispositivos.
+                        </li>
+                        <li>
+                            Soporte técnico y Asistencia telefónica las 24hs
+                        </li>
+                    </ul>
                 </article>
                 <article class="card_productos" id="producto2">
-                    <h1>Producto Intermedio</h1>
+                    <h1>Paquete Intermedio</h1>
                     <img id="imagen1" src="#">
-                    <p>Todos los ervicios del básico + Backup en la web hasta xtb; Monitoreo y Soporte hasta x tiempo</p>
+                    <ul>
+                        <li>
+                            Firewall de última generación
+                        </li>
+                        <li>
+                            Antivirus de dispositivo local, en red y web (El más efectivo del mercado) hasta 20 dispositivos.
+                        </li>
+                        <li>
+                            Backup en la nube hasta 5TB.
+                        </li>
+                        <li>
+                            Soporte técnico y Asistencia virtual las 24hs
+                        </li>
+                        <li>
+                            Soporte técnico y Asistencia a domicilio de Lunes a Viernes de 8 a 16hs
+                        </li>
+                        <li>
+                            Capacitaciones al personal 1 vez al año.
+                        </li>
+                    </ul>
+                    
                 </article>
                 <article class="card_productos" id="producto3">
                     <h1>Paquete Premium</h1>
                     <img id="imagen1" src="#">
-                    <p>Todo lo de Intermedio + Monitoreo y Soporte 24/7; Backup hasta xtb</p>
+                    <ul>
+                        <li>
+                            Firewall de última generación
+                        </li>
+                        <li>
+                            Antivirus de dispositivo local, en red y web (El más efectivo del mercado) hasta 50 dispositivos.
+                        </li>
+                        <li>
+                            Backup en la nube hasta 10TB.
+                        </li>
+                        <li>
+                            Soporte técnico y Asistencia virtual las 24hs
+                        </li>
+                        <li>
+                            Soporte técnico y Asistencia a domicilio las 24hs
+                        </li>
+                        <li>
+                            Capacitaciones de personal 2 veces al año.
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <section class="servicios_individuos">
+            <div class="contenedor_servicios_individuos">
+                <article class="card_productos" id="producto1">
+                    <h1>Paquete Básico</h1>
+                    <img id="imagen1" src="#">
+                    <ul>
+                        <li>
+                            Firewall de última generación
+                        </li>
+                        <li>
+                            Antivirus de dispositivo local, en red y web (El más efectivo del mercado) hasta 2 dispositivos.
+                        </li>
+                        <li>
+                            Soporte técnico y Asistencia telefónica las 24hs
+                        </li>
+                    </ul>
+                </article>
+                <article class="card_productos" id="producto2">
+                    <h1>Paquete Intermedio</h1>
+                    <img id="imagen1" src="#">
+                    <ul>
+                        <li>
+                            Firewall de última generación
+                        </li>
+                        <li>
+                            Antivirus de dispositivo local, en red y web (El más efectivo del mercado) hasta 3 dispositivos.
+                        </li>
+                        <li>
+                            Backup en la nube hasta 5TB.
+                        </li>
+                        <li>
+                            Soporte técnico y Asistencia virtual las 24hs
+                        </li>
+                        <li>
+                            Soporte técnico y Asistencia a domicilio de Lunes a Viernes de 8 a 16hs
+                        </li>
+                    </ul>
+                    
+                </article>
+                <article class="card_productos" id="producto3">
+                    <h1>Paquete Premium</h1>
+                    <img id="imagen1" src="#">
+                    <ul>
+                        <li>
+                            Firewall de última generación
+                        </li>
+                        <li>
+                            Antivirus de dispositivo local, en red y web (El más efectivo del mercado) hasta 5 dispositivos.
+                        </li>
+                        <li>
+                            Backup en la nube hasta 10TB.
+                        </li>
+                        <li>
+                            Soporte técnico y Asistencia virtual las 24hs
+                        </li>
+                        <li>
+                            Soporte técnico y Asistencia a domicilio las 24hs
+                        </li>
+                    </ul>
                 </article>
             </div>
         </section>
@@ -84,4 +201,22 @@
         </section>
     </main>
 </body>
+<footer>
+    <div id="redes">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <div class="container">
+      <ul id="link-footer">
+        <li><button href="#">Preguntas Frecuentes</button></li>
+        <li><button href="#">Contáctanos</button></li>
+        <li><button href="#">Productos</button></li>
+        <li><button href="#">Sobre Nosotros</button></li>
+        <li><button href="#">Términos y Condiciones</button></li>
+        <li><button href="#">Privacidad</button></li>
+      </ul>
+    </div>
+  </footer>
 </html>
