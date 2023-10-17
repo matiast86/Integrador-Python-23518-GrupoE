@@ -36,37 +36,53 @@
     <main>
       <section class="formulario_solicitud">
         <div>
-            <h1>CONSULTAS</h1>
+          <h1>PRESUPUESTO DE PRODUCTOS</h1>
         </div>
-        <div class="formulario_consultas">
-            <div id="input">
-                <form>
-                    <div id="name">
-                        <input type="text" id="first_name" placeholder="Nombre" required="required">
-                    </div>
-                    <div id="last_name">
-                        <input type="text" id="last_name" placeholder="Apellido" required="required">
-                    </div>
-                    <div id="corporation">
-                        <input type="text" id="corporation" placeholder="Empresa (opcional)">
-                    </div>
-                    <div id="email">
-                        <input type="email" id="email" placeholder="email" required="required">
-                    </div>
-                    <div class="lista_productos">
-                        <label>Motivo de consulta</label>
-                        <select id="productos">
-                            <option value="producto1" id="seleccion_producto1">Presupuesto personalizado</option>
-                            <option value="producto2" id="seleccion_producto2">Consultas</option>
-                        </select>
-                    </div>
-                    <div id="enviar">
-                      <button>Enviar</button>
-                    </div>
-                </form>
-            </div>
+        <div class="formulario_solicitud_productos">
+          <div id="input">
+            <form>
+              <div id="name">
+                <input type="text" id="first_name" placeholder="Nombre" required="required">
+              </div>
+              <div id="last_name">
+                <input type="text" id="last_name" placeholder="Apellido" required="required">
+              </div>
+              <div id="corporation">
+                <input type="text" id="corporation" placeholder="Empresa (opcional)">
+              </div>
+              <div id="email">
+                <input type="email" id="email" placeholder="Email" required="required">
+              </div>
+              <div id="tipo_cliente">
+                <label>Seleccione el tipo de cliente</label>
+                <select id="cliente" onchange="mostrarProductos()">
+                  <option value="empresas" id="cliente_empresas">Empresa</option>
+                  <option value="individuo" id="cliente_individuo">Individuo</option>
+                </select>
+              </div>
+              <div class="lista_productos" id="productos_empresas">
+                <label>Seleccione el producto para Empresas</label>
+                <select id="productos">
+                  <option value="productoEmpresas1" id="seleccion_producto_empresas1">Básico Empresas</option>
+                  <option value="productoEmpresas2" id="seleccion_producto_empresas2">Intermedio Empresas</option>
+                  <option value="productoEmpresas3" id="seleccion_producto_empresas3">Premium Empresas</option>
+                </select>
+              </div>
+              <div class="lista_productos" id="productos_individuos">
+                <label>Seleccione el producto para Individuos</label>
+                <select id="productos">
+                  <option value="productoIndividuos1" id="seleccion_producto_individuos1">Básico Individuos</option>
+                  <option value="productoIndividuos2" id="seleccion_producto_individuos2">Intermedio Individuos</option>
+                  <option value="productoIndividuos3" id="seleccion_producto_individuos3">Premium Individuos</option>
+                </select>
+              </div>
+              <div id="enviar">
+                <button type="submit">Enviar</button>
+              </div>
+            </form>
+          </div>
         </div>
-    </section>
+      </section>
     </main>
     <footer>
       <div id="redes">
@@ -86,5 +102,6 @@
         </ul>
       </div>
     </footer>
+    <script src="../assets/tp.js"></script>
 </body>
 </html>
