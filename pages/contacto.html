@@ -8,33 +8,100 @@
 </head>
 <body>
     <header>
+      <div id="logo">
+          <a href="../index.html" class="navbar-brand">NAVBAR</a>
+      </div>
         <nav class="navbar">
-            <div>
-                <a href="../index.html" class="navbar-brand">NAVBAR</a>
-            </div>
             <div id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Página 1</a>
+                    <div class="dropdown">
+                      <button class="button">Servicios</button>
+                      <div class="dropdown_options">
+                        <a class="drop-item" href="../pages/productos.html#servicios_empresas">Servicios Empresas</a>
+                        <a class="drop-item" href="../pages/productos.html#servicios_individuos">Servicios Individuos</a>
+                      </div>
+                    </div>
                   </li>
                   <li class="nav-item">
-                    <a href="#">Página 2</a>
+                    <a class="nav-link" href="../pages/sobre_nosotros.html">Sobre Nosotros</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Página 3</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Página 4</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Página 5</a>
+                    <a class="nav-link" href="#">contacto</a>
                   </li>
                 </ul>
               </div>
         </nav>
     </header>
     <main>
-
+      <section class="formulario_solicitud">
+        <div>
+          <h1>PRESUPUESTO DE PRODUCTOS</h1>
+        </div>
+        <div class="formulario_solicitud_productos">
+          <div id="input">
+            <form>
+              <div id="name">
+                <input type="text" id="first_name" placeholder="Nombre" required="required">
+              </div>
+              <div id="last_name">
+                <input type="text" id="last_name" placeholder="Apellido" required="required">
+              </div>
+              <div id="corporation">
+                <input type="text" id="corporation" placeholder="Empresa (opcional)">
+              </div>
+              <div id="email">
+                <input type="email" id="email" placeholder="Email" required="required">
+              </div>
+              <div id="tipo_cliente">
+                <label>Seleccione el tipo de cliente</label>
+                <select id="cliente" onchange="mostrarProductos()">
+                  <option value="empresas" id="cliente_empresas">Empresa</option>
+                  <option value="individuo" id="cliente_individuo">Individuo</option>
+                </select>
+              </div>
+              <div class="lista_productos" id="productos_empresas">
+                <label>Seleccione el producto para Empresas</label>
+                <select id="productos">
+                  <option value="productoEmpresas1" id="seleccion_producto_empresas1">Básico Empresas</option>
+                  <option value="productoEmpresas2" id="seleccion_producto_empresas2">Intermedio Empresas</option>
+                  <option value="productoEmpresas3" id="seleccion_producto_empresas3">Premium Empresas</option>
+                </select>
+              </div>
+              <div class="lista_productos" id="productos_individuos">
+                <label>Seleccione el producto para Individuos</label>
+                <select id="productos">
+                  <option value="productoIndividuos1" id="seleccion_producto_individuos1">Básico Individuos</option>
+                  <option value="productoIndividuos2" id="seleccion_producto_individuos2">Intermedio Individuos</option>
+                  <option value="productoIndividuos3" id="seleccion_producto_individuos3">Premium Individuos</option>
+                </select>
+              </div>
+              <div id="enviar">
+                <button type="submit">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer>
+      <div id="redes">
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="container">
+        <ul id="link-footer">
+          <li><a href="#">Preguntas Frecuentes</a></li>
+          <li><a href="#">Contáctanos</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="#">Sobre Nosotros</a></li>
+          <li><a href="#">Términos y Condiciones</a></li>
+          <li><a href="#">Privacidad</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="../assets/tp.js"></script>
 </body>
 </html>
