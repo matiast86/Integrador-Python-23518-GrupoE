@@ -20,11 +20,11 @@ header {
     text-align: center;
 }
 
-.logo{
+/* #logo{
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
-}
+} */
 
 nav ul {
     list-style: none;
@@ -78,4 +78,62 @@ nav a {
 
 .drop-item:hover {
     background: rgb(255, 255, 255);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(101, 256, 256);
+    color: black;
+    text-align: center;
+    font-size: small;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 20rem;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+footer li{
+    padding-bottom: 0.4rem;
+}
+
+#titulo{
+    font-weight: bold;
+    padding-bottom: 1.2rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    background: rgb(255, 255, 255);
+}
+
+footer p{
+    font-weight: bold;
+    font-size: x-small;
+    padding-top: 0.8rem;
+}
+
+#logo-footer{
+    padding-top: 3rem;
+}
+
+main{
+    background-color: rgb(255, 255, 255);
+}
+
+.formulario_main{
+    height: 100%;
 }
