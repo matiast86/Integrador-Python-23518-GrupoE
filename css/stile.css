@@ -227,3 +227,27 @@ aside img{
 .main_productos{
     text-align: center;
 }
+
+.info_nosotros{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_nosotros{
+    background: rgb(82, 118, 238);
+    border: solid 1px black;
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: black 4px 1px 3px;
+    color: #fff;
+    text-align: justify;
+    width: 450px;
+    height: 400px;
+    margin-left: 3em;
+}
+
+.box_titulos{
+    text-align: center;
+}
