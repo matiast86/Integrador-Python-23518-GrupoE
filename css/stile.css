@@ -144,8 +144,86 @@ footer p{
 
 main{
     background-color: rgb(255, 255, 255);
+    text-align: center;
 }
 
 .formulario_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100%;
+}
+
+#form_titulo{
+    padding-bottom: 10px;
+}
+
+.formulario_solicitud{
+    background: rgb(82, 118, 238);
+    border: solid 1px black;
+    padding: 3em;
+    border-radius: 0.5em;
+    box-shadow: black 4px 1px 3px;
+    color: #fff;
+    text-align: center;
+}
+
+.formulario_solicitud_productos div{
+    margin-top: 1em;
+    text-align: justify;
+}
+
+.formulario_solicitud_productos input{
+    width: 60%;
+}
+
+#campos{
+    text-align: center;
+}
+
+#enviar{
+    text-align: end;
+}
+.enviar-button {
+    margin-top: 1em;
+    padding: 0.8em 1.2em;
+    border-radius: 0.5em;
+    border: none;
+    background-color: #063db6;
+    color: #eff6ff;
+    font-weight: 700;
+    transition: ease-in-out 0.2s;
+}
+  
+.enviar-button:hover {
+    background-color: #4b8cee;
+    cursor: pointer;
+}
+
+.ciberseguridad {
+    text-align: center;
+}
+
+main img{
+    height: 300px;
+    width: 300px;
+}
+
+aside{
+    text-align: center;
+}
+
+aside img{
+    height: 200px;
+    width: 400px;
+}
+
+.main_nosotros{
+    text-align: center;
+    height: 100%;
+}
+
+.main_productos{
+    text-align: center;
 }

@@ -38,21 +38,21 @@
   <main class="formulario_main">
     <section class="formulario_solicitud">
       <div>
-        <h1>PRESUPUESTO DE PRODUCTOS</h1>
+        <h1 id="form_titulo">PRESUPUESTO DE PRODUCTOS</h1>
       </div>
       <div class="formulario_solicitud_productos">
         <div id="input">
           <form method="post">
-            <div id="name">
+            <div id="campos">
               <input type="text" id="first_name" placeholder="Nombre" required="required">
             </div>
-            <div id="last_name">
+            <div id="campos">
               <input type="text" id="last_name" placeholder="Apellido" required="required">
             </div>
-            <div id="corporation">
+            <div id="campos">
               <input type="text" id="corporation" placeholder="Empresa (opcional)">
             </div>
-            <div id="email">
+            <div id="campos">
               <input type="email" id="email" placeholder="Email" required="required">
             </div>
             <div id="tipo_cliente">
@@ -79,7 +79,7 @@
               </select>
             </div>
             <div id="enviar">
-              <button type="submit">Enviar</button>
+              <button type="submit" class="enviar-button">Enviar</button>
             </div>
           </form>
         </div>
