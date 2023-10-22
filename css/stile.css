@@ -20,11 +20,10 @@ header {
     text-align: center;
 }
 
-/* #logo{
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-} */
+#logo img{
+    height: 100px;
+    width: 160px;
+}
 
 nav ul {
     list-style: none;
@@ -120,6 +119,10 @@ footer a:hover {
     background: rgb(255, 255, 255);
 }
 
+footer li a:hover{
+    background: none;
+}
+
 footer p{
     font-weight: bold;
     font-size: x-small;
@@ -127,7 +130,16 @@ footer p{
 }
 
 #logo-footer{
-    padding-top: 3rem;
+    padding-top: 0.8rem;
+}
+
+#logo-footer img{
+    height: 120px;
+    width: 120px;
+}
+
+#logo-footer a:hover{
+    background: none;
 }
 
 main{
