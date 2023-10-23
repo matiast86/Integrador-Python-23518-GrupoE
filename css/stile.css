@@ -219,13 +219,61 @@ aside img{
     width: 400px;
 }
 
+.main_productos{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor_servicios_empresas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor_servicios_individuos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_productos{
+    background: rgb(82, 118, 238);
+    border: solid 1px black;
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: black 4px 1px 3px;
+    color: #fff;
+    text-align: justify;
+    width: 450px;
+    height: 450px;
+    margin-left: 3em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.titulo_producto{
+    text-align: center;
+}
+
+.card_productos img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    height: 160px;
+    width: 150px;
+}
+
+.card_productos li{
+    padding-bottom: 0.5em;
+}
+
 .main_nosotros{
     text-align: center;
     height: 100%;
-}
-
-.main_productos{
-    text-align: center;
 }
 
 .info_nosotros{
@@ -244,8 +292,12 @@ aside img{
     color: #fff;
     text-align: justify;
     width: 450px;
-    height: 400px;
+    height: 420px;
     margin-left: 3em;
+}
+
+.box_nosotros li{
+    padding-bottom: 0.5em;
 }
 
 .box_titulos{
