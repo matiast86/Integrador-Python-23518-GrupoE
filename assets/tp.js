@@ -12,5 +12,5 @@ function mostrarProductos() {
     }
   }
   
-  // Llamamos a la función mostrarProductos para establecer la visibilidad inicial
+
   mostrarProductos();
