@@ -58,7 +58,7 @@
             <div id="tipo_cliente">
               <label>Seleccione el tipo de cliente</label>
               <select id="cliente" onchange="mostrarProductos()">
-                <option value="opcion" id="opcion">Seleccione una opción</option>
+                <option selected value="opcion" id="opcion">Seleccione una opción</option>
                 <option value="empresas" id="cliente_empresas">Empresa</option>
                 <option value="individuo" id="cliente_individuo">Individuo</option>
               </select>
@@ -78,6 +78,9 @@
                 <option value="productoIndividuos2" id="seleccion_producto_individuos2">Intermedio Individuos</option>
                 <option value="productoIndividuos3" id="seleccion_producto_individuos3">Premium Individuos</option>
               </select>
+            </div>
+            <div id="adicional">
+              <input id="comentarios" type="text" placeholder="Consultas adicionales">
             </div>
             <div id="enviar">
               <button type="submit" class="enviar-button">Enviar</button>

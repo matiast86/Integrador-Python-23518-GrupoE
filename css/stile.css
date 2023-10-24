@@ -201,6 +201,13 @@ main{
     cursor: pointer;
 }
 
+#comentarios {
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+  }
+
+
 .ciberseguridad {
     text-align: center;
 }
@@ -303,3 +310,6 @@ aside img{
 .box_titulos{
     text-align: center;
 }
+
+
+
