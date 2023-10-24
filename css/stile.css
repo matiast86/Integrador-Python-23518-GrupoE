@@ -185,6 +185,7 @@ main{
 #enviar{
     text-align: end;
 }
+
 .enviar-button {
     margin-top: 1em;
     padding: 0.8em 1.2em;
@@ -201,12 +202,22 @@ main{
     cursor: pointer;
 }
 
-#comentarios {
+/* #comentarios {
     height: 100px;
     width: 100%;
     padding: 10px;
-  }
+}
 
+.formulario_solicitud_productos #adicional input{
+    text-align: left;
+} */
+
+.formulario_solicitud_productos textarea{
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 1em;
+}
 
 .ciberseguridad {
     text-align: center;
@@ -310,6 +321,8 @@ aside img{
 .box_titulos{
     text-align: center;
 }
+
+
 
 
 
