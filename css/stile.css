@@ -206,39 +206,11 @@ main{
     cursor: pointer;
 }
 
-/* #comentarios {
-    height: 100px;
-    width: 100%;
-    padding: 10px;
-}
-
-.formulario_solicitud_productos #adicional input{
-    text-align: left;
-} */
-
 .formulario_solicitud_productos textarea{
     height: 100px;
     width: 100%;
     padding: 10px;
     margin-top: 1em;
-}
-
-.ciberseguridad {
-    text-align: center;
-}
-
-main img{
-    height: 300px;
-    width: 300px;
-}
-
-aside{
-    text-align: center;
-}
-
-aside img{
-    height: 200px;
-    width: 400px;
 }
 
 .main_productos{
@@ -324,6 +296,78 @@ aside img{
 
 .box_titulos{
     text-align: center;
+}
+
+.main_index{
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+#definicion{
+    width: 80%;
+    margin: auto;
+}
+
+.ataqueInformatico{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2em;
+    padding-top: 1em;
+}
+
+.box_ataques{
+    background: rgb(82, 118, 238);
+    border: solid 1px black;
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: black 4px 1px 3px;
+    color: #fff;
+    text-align: justify;
+    width: 350px;
+    height: 570px;
+    margin-left: 3em;
+}
+
+.box_detalles{
+    width: 100%;
+    height: 30%;
+}
+
+.box_imagen{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    margin: auto;
+}
+
+.titulo_home{
+    text-align: center;
+}
+
+.medidas{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.medidas_detalles{
+    font-weight: bold;
+}
+
+aside{
+    text-align: center;
+    background: rgb(200, 202, 202);
+}
+
+aside img{
+    height: 150px;
+    width: 500px;
+    margin-top: 1em;
 }
 
 
