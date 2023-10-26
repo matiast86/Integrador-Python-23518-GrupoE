@@ -17,4 +17,15 @@ function mostrarProductos() {
 
   mostrarProductos();
 
+//Función para menu responsive
+
+function responsiveMenu() {
+  let x = document.getElementById("nav-bar");
+  if (x.className === "barra-menu") {
+    x.className += "responsive";
+  } else {
+    x.className = "barra-menu"
+  }
+}
+
 

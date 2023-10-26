@@ -95,6 +95,11 @@ nav a {
     background: rgb(255, 255, 255);
 }
 
+/*Ocultar Menu Hamburguesa*/
+nav .material-symbols-outlined {
+    display: none;
+}
+
 /* estilo del footer */
 
 footer {
@@ -399,6 +404,33 @@ aside img{
     width: 500px;
     margin-top: 1em;
 }
+
+/*Menu Responsive*/
+
+@media  screen and (max-width: 720px) {
+    nav ul li {display: none;}
+    nav .material-symbols-outlined {
+      float: right;
+      display: block;
+    }
+
+    /*
+      .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+    */
+}
+
+
 
 
 
