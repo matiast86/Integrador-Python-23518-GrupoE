@@ -1,3 +1,5 @@
+/* cuerpo principal */
+
 body {
     margin: 0;
     padding: 0;
@@ -11,14 +13,18 @@ body {
     height: 100vh;
 }
 
+/* Estilo del header y sus componentes */
+
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(101, 256, 256);
+    background: linear-gradient(to right, rgb(101,256,256), 85%, rgb(82, 118, 238));
     color: black;
     text-align: center;
 }
+
+/*Logo de la empresa - sirve para volver al home */
 
 #logo img{
     height: 100px;
@@ -37,10 +43,12 @@ nav a {
     color:black;
 }
 
+/* estilo y comportamiento de menu desplegable*/
+
 .dropdown {
     position: relative;
 }
-  
+
 .dropdown-options {
     display: none;
     position: absolute;
@@ -54,8 +62,10 @@ nav a {
 
 .menu-hamburguesa {
     display: none;
-  }
-  
+}
+
+/* comportamiento del button */
+
 .button {
     background: rgb(101, 256, 256);
     color:black;
@@ -68,6 +78,8 @@ nav a {
     background: rgb(255, 255, 255);
     cursor: pointer;
 }
+
+/* items del button */
 
 .drop-item {
   text-decoration: none;
@@ -83,11 +95,13 @@ nav a {
     background: rgb(255, 255, 255);
 }
 
+/* estilo del footer */
+
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(101, 256, 256);
+    background: linear-gradient(to left, rgb(101,256,256), rgb(82, 118, 238));
     color: black;
     text-align: center;
     font-size: small;
@@ -133,6 +147,8 @@ footer p{
     padding-top: 0.8rem;
 }
 
+/* logo en el footer */
+
 #logo-footer{
     padding-top: 0.8rem;
 }
@@ -146,10 +162,14 @@ footer p{
     background: none;
 }
 
+/* main general */
+
 main{
     background-color: rgb(255, 255, 255);
     text-align: center;
 }
+
+/* main especifico de la pagina contacto y diferentes estilo de su contenido*/
 
 .formulario_main{
     display: flex;
@@ -213,10 +233,14 @@ main{
     margin-top: 1em;
 }
 
+/* main especifico de la pagina productos y diferentes estilo de su contenido*/
+
 .main_productos{
     display: flex;
     flex-direction: column;
 }
+
+/* sub diviciones y cajas especificas de productos*/
 
 .contenedor_servicios_empresas{
     display: flex;
@@ -265,6 +289,8 @@ main{
     padding-bottom: 0.5em;
 }
 
+/* main especifico de la pagina sobre_nosotros y diferentes estilos de su contenido*/
+
 .main_nosotros{
     text-align: center;
     height: 100%;
@@ -297,6 +323,8 @@ main{
 .box_titulos{
     text-align: center;
 }
+
+/* main especifico de index/home y diferentes estilos de su contenido*/
 
 .main_index{
     margin-left: 250px;
@@ -358,6 +386,8 @@ main{
 .medidas_detalles{
     font-weight: bold;
 }
+
+/* estilo de aside - una propaganda*/
 
 aside{
     text-align: center;
