@@ -6,6 +6,7 @@
   <title>Productos y servicios</title>
   <link rel="stylesheet" href="../css/stile.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
   <header>
@@ -15,7 +16,10 @@
       </a>
     </div>
       <nav>
-        <ul>
+        <ul class="barra-menu" id="nav-bar">
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
           <li>
             <a href="../index.html">Home</a>
           </li>
@@ -36,6 +40,7 @@
           </li>
         </ul>
       </nav>
+      <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()"><div class="material-symbols-outlined">Menu</div></a>
   </header>
 
   <main class="main_productos">
@@ -144,6 +149,6 @@
       <p>&copy; 2023 Web desarrolada por Grupo E. Todos los derechos reservados. Raíz Cybersecurity Solutions.</p>
     </div>
   </footer>
-
+  <script src="../js/tp.js"></script>
 </body>
 </html>

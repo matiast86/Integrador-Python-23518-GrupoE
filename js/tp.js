@@ -14,18 +14,32 @@ function mostrarProductos() {
   }
 }
   
+//funcion para activar mostrarProductos solo un contacto.html
 
-  mostrarProductos();
+function activarMostrarProductos() {
+
+  let paginaActual = window.location.href;
+  let ArchivoPaginaActual = paginaActual.substring(paginaActual.lastIndexOf("/") + 1);
+  
+  if (ArchivoPaginaActual === "contacto.html") {
+    mostrarProductos();
+  }
+}
+
+activarMostrarProductos();
+
 
 //Función para menu responsive
 
 function responsiveMenu() {
+  console.log('responsiveMenu() called');
   let x = document.getElementById("nav-bar");
   if (x.className === "barra-menu") {
-    x.className += "responsive";
+      x.className += " responsive";
   } else {
-    x.className = "barra-menu"
+      x.className = "barra-menu";
   }
 }
+
 
 
