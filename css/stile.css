@@ -418,6 +418,8 @@ aside img{
 /*Menu Responsive*/
 
 @media screen and (max-width: 720px) {
+    
+    /* Barra Navegación*/
     nav ul li {display: none;}
     header .material-symbols-outlined {
         float: right;
@@ -435,6 +437,45 @@ aside img{
         display: block;
         text-align: left;
     }
+
+    /* main especifico de index/home y diferentes estilos de su contenido*/
+
+.main_index{
+    font-size: 95%;
+}
+
+#definicion{
+    font-size: 95%;
+    text-align: justify;
+    justify-content: center;
+    width: 100%;
+}
+
+.ataqueInformatico{
+    display: block;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.box_ataques{
+    margin: auto;
+}
+
+
+.titulo_home{
+    text-align: center;
+}
+
+.medidas{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+#ataques {
+    justify-content: center;
+}
+
 }
 
 
